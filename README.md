@@ -1,6 +1,6 @@
 # TrainGood Frontend
 
-This repo is for the TrainGood application frontend which is built using the React framework [Next.js](https://nextjs.org/).
+This repo is for the TrainGood application frontend which is built using the React framework [Next.js](https://nextjs.org/). The backend of the project can be found [here](https://github.com/michparlevliet/traingood-server).
 
 TrainGood is a personal fitness-tracking application which allows users to collect data on their physical activities and see their progression over time. Designed for those who love numbers and wellness, TrainGood aims to help the user better understand their activity patterns and lead to more efficient goal-setting (and goal-crushing)!
 
