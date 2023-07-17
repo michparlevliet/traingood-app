@@ -4,23 +4,23 @@
 //   return <Component {...pageProps} />
 // }
 
-import React, { useState, useEffect } from "react";
-import "@/styles//globals.css";
+// import React, { useState, useEffect } from "react";
+// import "@/styles//globals.css";
 
-function App() {
-  const [message, setMessage] = useState("");
+// function App() {
+//   const [message, setMessage] = useState("");
 
-  useEffect(() => {
-    fetch("http://localhost:8000/message")
-      .then((res) => res.json())
-      .then((data) => setMessage(data.message));
-  }, []);
+//   useEffect(() => {
+//     fetch("http://localhost:8000/message")
+//       .then((res) => res.json())
+//       .then((data) => setMessage(data.message));
+//   }, []);
 
-  return (
-    <div className="App">
-      <h1>{message}</h1>
-    </div>
-  );
-}
+//   return (
+//     <div className="App">
+//       <h1>{message}</h1>
+//     </div>
+//   );
+// }
 
-export default App
+// export default App
