@@ -1,8 +1,8 @@
-// import '@/styles/globals.css'
+import '@/styles/globals.css';
 
-// export default function App({ Component, pageProps }) {
-//   return <Component {...pageProps} />
-// }
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />
+};
 
 // import React, { useState, useEffect } from "react";
 // import "@/styles//globals.css";
@@ -23,4 +23,4 @@
 //   );
 // }
 
-// export default App
+// export default App;
