@@ -17,26 +17,22 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/register', {
+      const response = await fetch('/api/register.js', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
         body: JSON.stringify(formData),
       });
-    //   if (response.ok) {
-    //     console.log('Registration successful!');
-    //   } else {
-    //     const data = await response.json();
-    //     console.log('Error registering:', data.message);
-    //   }
-    // } catch (error) {
-    //   console.error('Error registering:', error);
-    // }
-    const data = await response.json();
-      console.log(data); // Optional: Handle the response data as needed
+      if (response.ok) {
+        console.log('Registration successful!');
+      } else {
+        const data = await response.json();
+        console.log('Error registering:', data.message);
+      }
     } catch (error) {
-      console.error('Error registering user:', error);
+      console.error('Error registering:', error);
     }
   };
 
