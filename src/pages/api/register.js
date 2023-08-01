@@ -1,3 +1,3 @@
-import { registerUser } from '../../../../traingood-server/routes/registerRoute'; 
+import registerRoute from '../../../../traingood-server/routes/registerRoute'; 
 
-export default registerUser;
+export default registerRoute;

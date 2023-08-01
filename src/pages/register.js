@@ -6,7 +6,6 @@ const Register = () => {
     l_name: '',
     email: '',
     password: '',
-    passwordConfirm: '',
   });
 
   const handleChange = (e) => {
@@ -17,7 +16,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/register.js', {
+      const response = await fetch('/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -31,7 +30,8 @@ const Register = () => {
         const data = await response.json();
         console.log('Error registering:', data.message);
       }
-    } catch (error) {
+    } 
+    catch (error) {
       console.error('Error registering:', error);
     }
   };
@@ -55,10 +55,6 @@ const Register = () => {
         <div>
           <label htmlFor="password">Password:</label>
           <input type="password" id="password" name="password" onChange={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="passwordConfirm">Confirm Password:</label>
-          <input type="password" id="passwordConfirm" name="passwordConfirm" onChange={handleChange} />
         </div>
         <button type="submit">Register</button>
       </form>
