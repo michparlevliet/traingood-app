@@ -1,0 +1,10 @@
+.title {
+  text-align: center;
+}
+
+/* Form field styles */
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1em;
+}

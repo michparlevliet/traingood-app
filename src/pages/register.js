@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from '@/styles/Register.module.css';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -37,28 +38,30 @@ const Register = () => {
   };
 
   return (
-    <div>
-      <h1>Registration Page</h1>
+  <div className="main">
+    <div className={styles.container}>
+      <h1 className={styles.title}>Registration Page</h1>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="f_name">First Name:</label>
+        <div className={styles.form}>
+          <label className={styles.registrationLabel} htmlFor="f_name">First Name:</label>
           <input type="text" id="f_name" name="f_name" onChange={handleChange} />
         </div>
-        <div>
-          <label htmlFor="l_name">Last Name:</label>
+        <div className={styles.form}>
+          <label className={styles.registrationLabel}  htmlFor="l_name">Last Name:</label>
           <input type="text" id="l_name" name="l_name" onChange={handleChange} />
         </div>
-        <div>
-          <label htmlFor="email">Email:</label>
+        <div className={styles.form}>
+          <label className={styles.registrationLabel}  htmlFor="email">Email:</label>
           <input type="email" id="email" name="email" onChange={handleChange} />
         </div>
-        <div>
-          <label htmlFor="password">Password:</label>
+        <div className={styles.form}>
+          <label className={styles.registrationLabel} htmlFor="password">Password:</label>
           <input type="password" id="password" name="password" onChange={handleChange} />
         </div>
-        <button type="submit">Register</button>
+        <button className={styles.submitBtn} type="submit">Register</button>
       </form>
     </div>
+  </div>
   );
 };
 
