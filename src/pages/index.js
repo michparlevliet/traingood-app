@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
 
-// import Layout from '../components/Layout';
+import Layout from '/components/Layout';
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="svg" href="/traingood-icon.svg" />
       </Head>
-      {/* <Layout> */}
+      <Layout>
       <main className={styles.main}>
         <div className={styles.description}>
           <h1>TrainGood</h1>
@@ -42,7 +42,7 @@ export default function Home() {
           </a>
         </div>
       </main>
-    {/* </Layout> */}
+    </Layout>
     </>
   );
 }

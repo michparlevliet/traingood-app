@@ -1,0 +1,27 @@
+.nav {
+  background-color: #dddcdc;
+  margin-left: -1em;
+  margin-right: -1em;
+  padding: 1em;
+  box-shadow: 0 0 2em rgb(112, 122, 122);
+}
+
+.links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0.75em; 
+  color: #686a6b;
+}
+
+.link:hover {
+  border: 1px solid orange;
+  border-radius: 0.5em;
+  color: orange;
+}

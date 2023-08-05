@@ -1,20 +1,18 @@
 import Link from 'next/link';
+import styles from '@/styles/Navbar.module.css'
 
 const Footer = () => {
   return (
-    <nav>
-      <ul>
+    <nav className={styles.nav}>
+      <ul className={styles.links}>
         <li>
-          <Link href="/">Home</Link>
+          <Link className={styles.link} href="/">Home</Link>
         </li>
         <li>
-          <Link href="/register">Register</Link>
+          <Link className={styles.link} href="/login">Login</Link>
         </li>
         <li>
-          <Link href="/login">Login</Link>
-        </li>
-        <li>
-          <Link href="/logout">Logout</Link>
+          <Link className={styles.link} href="/register">Register</Link>
         </li>
       </ul>
     </nav>
