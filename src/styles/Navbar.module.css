@@ -1,9 +1,9 @@
 .nav {
-  background-color: #dddcdc;
+  background-color: #ededed;
   margin-left: -1em;
   margin-right: -1em;
   padding: 1em;
-  box-shadow: 0 0 2em rgb(112, 122, 122);
+  box-shadow: 0 0 1em rgb(207, 209, 209);
 }
 
 .links {

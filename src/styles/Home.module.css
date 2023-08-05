@@ -52,6 +52,25 @@
   width: 100%;
 }
 
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+
+.col {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  gap: 1em;
+  flex: 1 0 0;
+}
+
+.col img {
+  max-width: 50%;
+}
+
 .card {
   padding: 1.5rem;
   border-radius: 10px;
