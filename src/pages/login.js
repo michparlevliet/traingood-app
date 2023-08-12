@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from "@/styles/Login.module.css";
+import Layout from '/components/Layout';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -37,6 +38,7 @@ const Login = () => {
   };
 
   return (
+    <Layout>
     <div className="main">
       <h1 className={styles.title}>Login Page</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
@@ -51,6 +53,7 @@ const Login = () => {
         <button type="submit">Login</button>
       </form>
     </div>
+    </Layout>
   );
 };
 

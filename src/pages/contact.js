@@ -14,33 +14,24 @@ export default function Home() {
       </Head>
       <Layout>
       <main className={styles.main}>
-
         <div className={styles.center}>
           <img src="/traingood-icon.svg" alt="TrainGood Logo" className={styles.logo} />
         </div>
 
         <div className={styles.description}>
           <h1>TrainGood</h1>
-          <p>
-            Where your best you begins.
-          </p>
+          <p>Get in touch with us:</p>
         </div>
 
-        <div className={styles.grid}>
-          <a href="/register" className={styles.card}>
-            <h2>Register &rarr;</h2>
-            <p>
-              Click here to create an account.
-            </p>
-          </a>
-
-          {/* Add more cards or sections as needed */}
-          <a href="/login" className={styles.card}>
-            <h2>Login &rarr;</h2>
-            <p>
-              Already have an account? Login here.
-            </p>
-          </a>
+        <div className={styles.flex}>
+          <div className={styles.card}>
+            <h2>Email:</h2>
+            <p>contact@traingood.ca</p>
+          </div>
+          <div className={styles.card}>
+            <h2>Call:</h2>
+            <p>1-(234)-5678</p>
+          </div>
         </div>
       </main>
     </Layout>

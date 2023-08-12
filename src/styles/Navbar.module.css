@@ -6,6 +6,17 @@
   box-shadow: 0 0 1em rgb(207, 209, 209);
 }
 
+.button {
+  margin: 2em; 
+  color: #686a6b;
+  background-color:#ffff;
+  border: none;
+}
+
+.button:hover {
+  color: orange;
+}
+
 .links {
   display: flex;
   flex-flow: row wrap;

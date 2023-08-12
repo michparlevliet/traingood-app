@@ -14,16 +14,15 @@ export default function Home() {
       </Head>
       <Layout>
       <main className={styles.main}>
-
-        <div className={styles.center}>
-          <img src="/traingood-icon.svg" alt="TrainGood Logo" className={styles.logo} />
-        </div>
-
         <div className={styles.description}>
           <h1>TrainGood</h1>
           <p>
             Where your best you begins.
           </p>
+        </div>
+
+        <div className={styles.center}>
+          <img src="/traingood-icon.svg" alt="TrainGood Logo" className={styles.logo} />
         </div>
 
         <div className={styles.grid}>

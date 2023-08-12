@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from '@/styles/Register.module.css';
+import Layout from '/components/Layout';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -38,6 +39,7 @@ const Register = () => {
   };
 
   return (
+    <Layout>
   <div className="main">
     <div className={styles.container}>
       <h1 className={styles.title}>Registration Page</h1>
@@ -62,6 +64,7 @@ const Register = () => {
       </form>
     </div>
   </div>
+  </Layout>
   );
 };
 
