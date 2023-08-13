@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from "@/styles/Login.module.css";
+import styles from "@/styles/Form.module.css";
 import Layout from '/components/Layout';
 
 const Login = () => {
@@ -40,18 +40,20 @@ const Login = () => {
   return (
     <Layout>
     <div className="main">
+      <div className={styles.container}>
       <h1 className={styles.title}>Login Page</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email" className={styles.label}>Email:</label>
           <input type="email" id="email" name="email" onChange={handleChange} />
         </div>
         <div>
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password" className={styles.label}>Password:</label>
           <input type="password" id="password" name="password" onChange={handleChange} />
         </div>
-        <button type="submit">Login</button>
+        <button className={styles.submitBtn} type="submit">Login</button>
       </form>
+      </div>
     </div>
     </Layout>
   );

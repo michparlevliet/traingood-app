@@ -41,24 +41,24 @@ export default function Home() {
           </div>
 
           <div className={styles.col}>
-            <a href="/add-workout" className={styles.card}>
-              <h2>Add Workout</h2>
+            <a href="/add-activity" className={styles.card}>
+              <h2>New Activity</h2>
               <p>
                 Track your workouts here.
               </p>
             </a>
 
             <a href="/training-plans" className={styles.card}>
-              <h2>Training Plans</h2>
+              <h2>View Past Activities</h2>
               <p>
-                Create, edit, and review training plans.
+                Review your training.
               </p>
             </a>
 
             <a href="/personal-records" className={styles.card}>
               <h2>Personal Records</h2>
               <p>
-                See all your achievements!
+                See all your achievements.
               </p>
             </a>
           </div>

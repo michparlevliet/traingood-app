@@ -4,6 +4,7 @@
 .container {
   display: flex;
   flex-flow: column;
+  align-items: center;
 }
 
 /* Title styles */
@@ -15,9 +16,10 @@
 /* Form field styles */
 .form {
   margin-bottom: 20px;
+  width: 50vw;
 }
 
-.registrationLabel {
+.label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
@@ -32,8 +34,8 @@
 }
 
 /* Button styles */
-.submitBtn button {
-  width: 100%;
+.submitBtn {
+  width: fit-content;
   padding: 10px;
   font-size: 16px;
   color: #fff;
@@ -43,7 +45,7 @@
   cursor: pointer;
 }
 
-.submitBtn button:hover {
+.submitBtn:hover {
   background-color: #0056b3;
 }
 
