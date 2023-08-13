@@ -48,7 +48,7 @@ export default function Home() {
               </p>
             </a>
 
-            <a href="/training-plans" className={styles.card}>
+            <a href="/view-activities" className={styles.card}>
               <h2>View Past Activities</h2>
               <p>
                 Review your training.

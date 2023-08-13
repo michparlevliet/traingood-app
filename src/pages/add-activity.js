@@ -7,7 +7,6 @@ const AddActivity = () => {
     type: '',
     start_time: '',
     end_time: '',
-    duration: '',
     calories_burned: '',
     steps: '',
     description: '',
