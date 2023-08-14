@@ -4,6 +4,7 @@ import styles from '@/styles/Home.module.css';
 import BarChart from '/components/BarChart';
 import LineChart from '/components/LineChart';
 import { UserData } from '../Data';
+import Link from 'next/link';
 
 import Layout from '/components/Layout';
 // import { Chart } from 'react-chartjs-2';
