@@ -18,7 +18,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/register', {
+      const response = await fetch('https://traingood-693615ea8b7d.herokuapp.com/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

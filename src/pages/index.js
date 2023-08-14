@@ -27,20 +27,20 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a href="/register" className={styles.card}>
+          <Link href="/register" className={styles.card}>
             <h2>Register &rarr;</h2>
             <p>
               Click here to create an account.
             </p>
-          </a>
+          </Link>
 
           {/* Add more cards or sections as needed */}
-          <a href="/login" className={styles.card}>
+          <Link href="/login" className={styles.card}>
             <h2>Login &rarr;</h2>
             <p>
               Already have an account? Login here.
             </p>
-          </a>
+          </Link>
         </div>
       </main>
     </Layout>

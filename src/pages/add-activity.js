@@ -20,7 +20,7 @@ const AddActivity = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/add-activity', {
+      const response = await fetch('https://traingood-693615ea8b7d.herokuapp.com/api/add-activity', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ const AddActivity = () => {
         });    
         if (response.status === 201) {
         console.log('Activity added successfully!');
-        // You can redirect to a success page or update the UI accordingly
+        // redirect back to activity view page
       }
     } catch (error) {
       console.error('Error adding activity:', error);
